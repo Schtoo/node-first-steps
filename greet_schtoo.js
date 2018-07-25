@@ -1,3 +1,8 @@
+const chalk = require('chalk')
+const hello = require('./greet')
+const styledMessage = chalk.bgBlue.black(hello('Schtoo'))
+console.log(styledMessage)
+
 const figlet = require('figlet');
 const greet = require('./greet');
 
@@ -9,3 +14,5 @@ figlet('Hello Schtoo', function(err, data) {
  }
   console.log(data)
 });
+
+
